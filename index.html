@@ -1,0 +1,240 @@
+<html>
+
+<head>
+    <title> STUtor Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styling for nav, footer, and tab display-->
+    <style type="text/css">
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 3;
+            display: flex;
+            justify-content: flex-end;
+            background-color: #FC976B;
+        }
+
+        .navButt {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-decoration: none;
+            text-align: right;
+
+            border: none;
+            outline: none;
+            padding: 15px 25px;
+            display: inline-block;
+
+            background-color: #FC976B;
+        }
+
+        .navButt.active {
+            background-color: #e7b48a;
+
+        }
+
+        .navButt:hover {
+            background-color: #e7b48a;
+        }
+
+        .footer {
+            position: fixed;
+            z-index: 3;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 10%;
+            text-align: left;
+            background-color: #FC976B;
+
+            display: flex;
+        }
+        
+        .tab {
+            display: none;
+        }
+    </style>
+
+    <!-- styling for everything else -->
+    <link rel="stylesheet" href="style.css">
+    <!-- refers to javascript file-->
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <nav>
+        <button class="navButt" onClick="openTab('Home',event)" id="defaultOpen">Home</button>
+        <button class="navButt" onClick="openTab('Find',event)">Find A Tutor</button>
+        <button class="navButt" onClick="openTab('About',event)">About</button>
+        <button class="navButt" onClick="openTab('Contact',event)">Contact</button>
+
+    </nav>
+
+    <!-- footer -->
+    <div class="footer">
+        <p>Stutor Finder:</p>
+        <p>Schedule a session with one of our finest tutors</p>
+
+
+    </div>
+
+    <!-- home tab container-->
+
+    <div class="tab" id="Home" style = "display: block;"><!--default tab shown-->
+
+        <!-- Container for introduction and background image-->
+        <div class="introduction">
+            <img src="images/background.jpg">
+
+            <div class="text">
+                <h1>Who We Are</h1>
+                <p>Stutor Finder is Massachussetts’ leading academic platform dedicated to
+                    guide and support high school students. Whether you need one-on-one assistance, interactive group
+                    work, virtual assistance, or a comprehensive guide through college applications, STUtor will
+                    connect you with our expert tutors that will help you reach your goals </p>
+            </div>
+
+
+        </div>
+
+        </hr>
+
+        <div class="highlights">
+            <div class="wrapper">
+
+                <div class="card">
+                    <h2>#1 Tutoring Program In MA </h2>
+                </div>
+
+                <div class="card">
+                    <h2>Tutoring by Experts</h2>
+                </div>
+
+                <div class="card">
+                    <h2>In-person & Virtual</h2>
+                </div>
+
+                <div class="card">
+                    <h2>92% Reach Their Dream Colleges</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+        </hr>
+
+        <!-- More content container -->
+        <div class="content">
+
+            <div class="section">
+                <img src="images/calender.jpg" style="object-fit:cover; width: 35%; height: auto; position: relative; ">
+                <h2>How it Works</h2>
+                <p>Filter our network of tutors and areas of expertise by subject and select your preferred tutoring
+                    format in this page(will be a link to Find a Tutor page). Then pick the times that fits
+                    your schedule</p>
+            </div>
+
+            <div class="section">
+                <img src="images/dev.jpg" style="object-fit:cover; width: 35%; height: auto; position: relative; ">
+                <h2>Our History</h2>
+                <p>Founded here in Massachussetts by recent high school students graduates who had a simple
+                    vision: support fellow peers find their path in such a crucial academic era. This began
+                    as a small peer-tutoring network that has grown into a statewide organization. </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Find a tutor tab container-->
+    <div class="tab" id="Find">
+        <div class="find-container">
+            <h2> List of Tutors</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Specialty</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Lily Cole</p>
+                    </td>
+                    <td>
+                        <p>Biology</p>
+                    </td>
+                    <td>
+                        <p>Boston</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Peter Parker</p>
+                    </td>
+                    <td>
+                        <p>Mathematics</p>
+                    </td>
+                    <td>
+                        <p>Worcester</p>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <p>Harry Potter</p>
+                    </td>
+                    <td>
+                        <p>Engineering</p>
+                    </td>
+                    <td>
+                        <p>Rhode Island</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- Contact tab -->
+    <div class="tab" id="Contact">
+        <div class = "contact-container">
+            
+            <h2>For any questions, please fill out this form: </h2>
+
+            <form action = # method ='get'>
+                <label>Name: </label>
+                <input type = "text" name='name'>
+                <br /><br />
+
+                Question:
+                <br /><br />
+                <textarea>
+                </textarea>
+
+                <br /><br />
+                <input type = "submit" value = "Go!">
+
+            </form>
+        </div>
+    </div>
+
+    <!-- About tab container -->
+    <div class="tab" id="About">
+        <div class = "about-container">
+            <h1>About Stutor Finder</h1>
+        <p> This company was founded by high school graduates during 2020. Now it has developed
+            into a prospering organization that has connections all over Massachussetts. The mission 
+            has stayed the same since the beginning: to help and guide students. </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

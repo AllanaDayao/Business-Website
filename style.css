@@ -1,0 +1,173 @@
+
+
+/* general styling */
+body, html {
+    background:#FCE3B6;
+    height: 100%;
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+p {
+    font-size: 18px;
+    text-align: left;
+    padding: 10px 10px;
+}
+
+h2 {
+    padding: 10px 10px;
+}
+
+/* ----------- HOME TAB ------------- */
+/* introduction container*/
+.introduction {
+    display:flex;
+    position:relative; 
+    margin: 0 0;
+}
+
+.introduction img {
+    height: 500px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+
+    align-items: center;
+}
+
+.introduction .text {
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+
+    /* centering */
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgba(0,0,0,0.5);
+    color:aliceblue;
+}
+
+
+/* Highlights container */
+.highlights {
+    position: relative;
+    width: 100%;
+}
+
+.highlights .wrapper {
+    display: flex;
+    padding: 25px;
+}
+
+.highlights .card {
+    background-color: #faf6dd;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 5px 20px;
+    flex: 1;
+}
+
+.highlights .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.highlights h2 {
+    padding: 10px 20px;
+}
+
+
+/* More content container */
+.content {
+    width:70%;
+    height: 200px;
+    position: relative;
+    object-position: center;
+    
+    /* centering */
+    left: 15%
+
+}
+
+.content .section {
+    display: flex;
+    border: 3px solid #eee;
+    margin: 30px 20px;
+
+    background-color: #f2aa79;
+}
+
+
+/* ----------- FIND A TUTOR TAB ---------- */
+
+.find-container {
+    width: 60%;
+    margin: 40px auto;    
+}
+table {
+    width: 100%;
+    margin: 20px 20px;
+    background-color:#eee;
+}
+table, th, td {
+    border: 2px solid #fcc885;
+    text-align: center;
+}
+th {
+    
+    font-size: 25px;
+}
+
+
+/* --------- CONTACT TAB --------- */
+
+.contact-container {
+    position: relative;
+    width: 60%;
+    margin: 50px auto;
+}
+.contact-container form {
+    text-align: left;
+    background-color: #eee;
+    border: 2px solid #de8f5a;
+    
+}
+
+
+/* ---------- ABOUT TAB ----------- */
+.about-container {
+    width: 60%;
+    margin: 60px auto;  
+    padding: 15px 15px;
+    background-color: #eee;
+}
+
+
+/* ------- responsive styling ------ */
+@media screen and (max-width: 600px) {
+    .introduction .text {
+        width: 80%;
+    }
+
+    .content .section {
+        display: block;
+    }
+    .content .section img {
+        margin: 20px 110px;
+        width: 100%;
+        height: auto;
+
+    }
+    .navButt {
+        display: block;
+    }
+    .highlights .wrapper{
+        display: block;
+    }
+}
+
+
+
+
