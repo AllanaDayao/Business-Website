@@ -70,10 +70,6 @@ h2 {
     flex: 1;
 }
 
-.highlights .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
 .highlights h2 {
     padding: 10px 20px;
 }
@@ -97,6 +93,10 @@ h2 {
     margin: 30px 20px;
 
     background-color: #f2aa79;
+}
+
+.content .section:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 
